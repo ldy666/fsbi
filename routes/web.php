@@ -14,7 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::namespace('Index')->prefix('/showdata')->group(function(){
-    route::get('index','IndexController@index');
-});
